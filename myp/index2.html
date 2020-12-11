@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dawtlaga hicheel</title>
+</head>
+<style type="text/css">
+	table{
+		margin-bottom: 50px;
+	}
+</style>
+<body>
+	<div id="twodiv" style="width: 200px; 
+	                        height: 200px; 
+	                        background: yellow; 
+	                        margin-bottom: 50px;">
+	</div>
+	<table border="1px solid" height="100px" width="100px;">
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+<script type="text/javascript">
+	// 1
+    //setInterval(function(){ alert("its alert"); }, 3000);
+
+    // 5
+    document.querySelector('#twodiv').onmouseover = function(){mouseover()};
+    document.querySelector('#twodiv').onmouseout = function(){mouseout()};
+    function mouseover(){
+        document.querySelector('#twodiv').style.background = "red";
+    }
+    function mouseout(){
+        document.querySelector('#twodiv').style.background = "yellow";
+    } 
+
+
+    // 3
+    let elem = document.createElement('div');
+    elem.style.width = "100px";
+    elem.style.height = "100px";
+    elem.style.background = "yellow";
+    document.body.appendChild(elem);
+
+    // 4
+    // var (undefined)
+    window.log(x);
+    var x = 10;
+    window.log(x);
+    //  let (error)
+    window.log(y);
+    let y = 50;
+    window.log(y);
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>

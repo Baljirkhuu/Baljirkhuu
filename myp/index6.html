@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Begginner 5 and 7</title>
+</head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+	.container{
+		display: flex;
+		flex-direction: row;
+	}
+	.divv{
+		margin: 10px;
+		background: grey;
+		height: 100px; 
+		width: 100px;
+		display: block;
+	}
+	p{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	button{
+		margin-left: 150px;
+	}
+</style>
+<body>
+	<div class="container">
+	    <div class="divv" id="myDiv"></div>
+	    <div class="divv" id="myDiv1"></div>
+	    <div class="divv" id="myDiv2"></div>
+	</div>
+	<button onclick="unsee()" type="button">click me</button>
+	<script type="text/javascript">
+		// 1
+		var up = 0;
+		function unsee(){
+			if (up == 0){ 
+				document.querySelector('#myDiv').style.background = "none";
+			}
+			else if(up == 1){
+				document.querySelector('#myDiv1').style.background = "none";
+				document.querySelector('#myDiv').style.background = "grey";
+			}
+			else if(up == 2){
+				document.querySelector('#myDiv').style.background = "grey";
+				document.querySelector('#myDiv1').style.background = "grey";
+				document.querySelector('#myDiv2').style.background = "none";
+			}
+			else{
+				document.querySelector('#myDiv').style.background = "grey";
+				document.querySelector('#myDiv1').style.background = "grey";
+				document.querySelector('#myDiv2').style.background = "grey";
+				up = -1;
+			}
+			up++
+		};
+
+
+		// 2
+		var myfriends =["Анхаа", "Одко"," Боолоо"," Содко", "Баяраа", " Төөгий",];
+		var myplaces =["гандангийн урд", "Тоглоомны газар","Blue slyе-ын урд","Shangrilla-ын 7н давхарт", "байшингийн дээвэр дээр", "сургуулийн урд",];
+		var myactions =["хоол идэж", "найзтайгаа уулзаж","бүжиглэж","дуу дуулж", "ном уншиж", "гүйж",];
+
+		var myRandomFriends = myfriends[Math.floor(Math.random() * myfriends.length)];
+		var myRandomPlaces = myplaces[Math.floor(Math.random() * myplaces.length)];
+		var myRandomActions = myactions[Math.floor(Math.random() * myactions.length)];
+
+		var  show = myRandomFriends + ' ' + myRandomPlaces + ' ' + myRandomActions + ' ' + "байна."
+		alert(show);
+	</script>
+</body>
+</html>

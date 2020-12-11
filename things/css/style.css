@@ -1,0 +1,289 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	height: 750px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Poppins', sans-serif; 
+}
+
+#roomOne{
+	width: 35%;
+	height: 100%;
+}
+#roomOneofthings{
+	height: 100%;
+	background: #17272e;
+}
+#div2{
+	width: 3px;
+	height: 100%;
+	background: #fff;
+}
+#roomTwo{
+	width: 65%;
+	height: 100%;
+	margin: 0 auto;
+	background: #17272e;
+}
+#picture img{
+	width: 100%;
+	height: 650px;
+	object-fit: cover;
+}
+#div3{
+	width: 100%;
+	height: 3px;
+	background: #3f51b559;
+}
+#bout{
+	width: 100%;
+	height: 100%;
+}
+#iam{
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif; 
+	margin: 20px;
+	color: #fff;
+}
+#pageTitle{
+	font-size: 25px;
+	color: #fff;
+	margin: 0 auto;
+	padding: 10px 0; 
+	width: 70%;
+	font-family: 'Poppins', sans-serif;
+}
+#name{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 125px auto;
+	font-family: 'Poppins', sans-serif;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+#p1{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 100px;
+}
+#div{
+	height: 2px;
+	width: 100%;
+	background: #fff;
+}
+
+#p2{
+	position: absolute;
+	font-size: 55px;
+	font-weight: 700;
+	margin-top: 20px; 
+}
+#p3{
+	font-size: 15px;
+	font-weight: 700;
+}
+#myselfIcons{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+#myselfIcons button{
+	width: 60px;
+	height: 57px;
+	border: 3px solid #fff;
+	background: none;
+	outline: none;
+	border-radius: 40px;
+	transition: .4s;
+	box-shadow: 0 10px 15px;
+}
+#myselfIcons button:hover{
+	transform: scale(1.1);
+	transition: .4s;
+	cursor: pointer;
+}
+#myselfIcons button img{
+	width: 35px;
+	margin-top: 4px;
+    margin-left: 1px;
+	transition: .4s; 
+	transform: scale(0.9);
+}
+#myselfIcons button img:hover{
+	transition: .4s; 
+	transform: scale(0.8);
+	cursor: pointer;
+}
+#iconTitles{
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+#iconTitles p{
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 0px 10px 15px #000;
+}
+#icons{
+	width: 70%;
+	margin: 0 auto;
+}
+#contactMe{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+}
+#instaAndFacebook{
+	display: flex;
+	justify-content: space-evenly;
+}
+#instaAndFacebook button{
+	height: 50px; 
+	width: 50px;
+	background: none;
+	border: 3px solid #000;
+	border-radius: 30px;
+	box-shadow: 0 10px 15px;
+	transition: .5s;
+	outline: none;
+}
+#instaAndFacebook #instaButton:hover{
+	transition: .5s;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+#instaAndFacebook #facebookButton:hover{
+	transition: .5s;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+#instaAndFacebook #instaButton img{
+	width: 32px;
+	margin-top: 3px;
+	transition: .4s;
+	outline: none;
+}
+#instaAndFacebook #facebookButton img{
+	width: 32px;
+	margin-top: 3px;
+	transition: .4s;
+	outline: none;
+}
+#instaAndFacebook #instaButton img:hover{
+	transform: scale(0.7);
+	transition: .4s;
+	cursor: pointer;
+}
+#instaAndFacebook #facebookButton img:hover{
+	transform: scale(0.7);
+	transition: .4s;
+	cursor: pointer;
+}
+
+
+#fault{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	display: none;
+	z-index: 100; 
+}
+#faultwo{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	z-index: 100; 
+	display: none;
+}
+#faulthree{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	z-index: 100; 
+	display: none;
+}
+#sentenceboutme{
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+#sentenceboutme p{
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif; 
+	margin: 70px;
+}
+#circle{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	height: 750px;
+	width: 100%;
+}
+#lilprojects{
+	background: #b5babc;
+	margin: 60px; 
+	height: 600px;
+	width: 600px;
+	box-shadow: 0 45px 325px 25px #000;
+	border-radius: 300px;
+}
+#allthings{
+	margin: 100px 0; 
+}
+.project{
+	border: none;
+	background: none;
+	height: 90px;
+	width: 90px;
+	border-radius: 45px;
+	margin: 0 auto;
+	outline: none;
+	transition: .5s;
+	box-shadow: 0 3px 30px #000;
+}
+.project p{
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif; 
+}
+.project:hover{
+	transition: .5s;
+	transform: scale(1.1);
+	background: #898989;
+	cursor: pointer;
+}
+.project p:hover{
+
+}
+#same{
+	display: flex;
+	flex-direction: row;
+}
+#same2{
+	display: flex;
+	flex-direction: row;
+	margin: 66px 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}

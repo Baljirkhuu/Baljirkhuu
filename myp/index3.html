@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function and some logic</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1
+		function show(anh){
+			let count = 0;
+			for (let i = 0; i <= anh; i++) {
+				if (anh%i == 0) {
+					count++
+				}
+			}
+		    if(count == 2){
+		    	return true;
+		    }
+		    return false;
+		}
+		console.log(show(2));
+
+		// 2
+		/*
+		function printprime(n){
+			for (let i = 1; i <= n; i++) {
+				if (isprime(i)) {
+					console.log(i);
+				}
+			}
+		}
+		*/
+		function big(){
+			let num = 2;
+			while(num < 50){
+				let count = 0;
+				for (let i = 0; i <= num; i++) {
+					if (num%i == 0) {
+						count++;
+					}
+			    }
+			    if (count < 3) {
+			    	console.log(num);
+			    }
+			    num = num + 1;
+			}
+		}
+		console.log(big());
+
+        // 3
+        /*
+        function palindrome(gl){
+        	gl = gl.toLowerCase();
+        	for (let i = 0; i < gl.length; i++) {
+        		if (gl[i] !== gl[gl.length - 1 - i]) {
+        			return false;
+        		}
+        	}
+        	return true;
+        } 
+        console.log(palindrome(gl));
+        */
+        function isrome(str){
+        	str = str.toString().toLowerCase();
+        	str = str.replace(",", "");
+        	str = str.split(" ").join("");
+        	for (var i = 0; i <= str.length; i++) {
+        		if(str[i] !== str[str.length-i -1]){
+        			return false;
+        		}
+        		return true;
+        	}
+        }
+
+        
+
+
+
+
+        // 4
+        function asd( last = 50, first = 10 ){
+            for (var i = first; i <= last; i++) {
+	            if (i%3 == 0) {
+		            console.log(i);
+	            }
+            }   
+        }
+	</script>
+</body>
+</html>

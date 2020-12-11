@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toast notification</title>
+</head>
+<style type="text/css">
+	body{
+		display: flex;
+		justify-content: center;
+	}
+	#toast{
+		position: fixed;
+		top: 0;
+		background: #ccc;
+		color: #000;
+		padding: 16px;
+		border-radius: 4px;
+		text-align: center;
+		z-index: 1;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		margin-top: 100px;
+		visibility: hidden;
+	}
+	#toast.show{
+		visibility: visible;
+	}
+	button{
+		background: #ccc;
+		width: 150px;
+		height: 40px;
+		border: none;
+		transition: .3s;
+		border-radius: 8px;
+		box-shadow: 0 5px 10px;
+		outline: none;
+	}
+	button:hover{
+		transition: .3s;
+		transform: scale(1.1);
+		box-shadow: 0 8px 15px;
+		cursor: pointer;
+		font-size: 15px;
+	}
+</style>
+<body>
+	<button onclick="showhide()"> Click here </button>
+	<div id="toast">its toast</div>
+<script type="text/javascript">
+	function showhide(){
+		let m = document.querySelector("#toast");
+		m.classList.add("show");
+		setTimeout(function(){
+			m.classList.remove("show");
+		},3000);	
+	};
+</script>
+</body>
+</html>

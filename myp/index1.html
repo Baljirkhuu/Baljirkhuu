@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capslock On Off</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: skyblue;
+	}	
+	#divla{
+		display: flex;
+		justify-content: center;
+		margin-top: 20%	;
+	}
+	button{
+		border: none;
+		background: #fff;
+		outline:none;
+		width: 30px;
+		height: 25px;
+		transition: .5s;
+		box-shadow: 0 5px 10px;
+		border-radius: 20px;
+	}
+	button:hover{
+		cursor: pointer;
+		transition: .5s;
+		transform: scale(1.1);
+	}
+	img{
+		width: 15px;
+		height: 15px;
+	}
+	input{
+		width: 200px;
+		height: 25px;
+		margin-right: 10px;
+		border:none;
+		outline: none;
+		border-radius: 5px;
+		box-shadow: 0 5px 10px;
+	}
+	p{
+		display: none;
+	}
+	::placeholder{
+		color: #000;
+	}
+</style>
+<body>
+	<div id="divla">
+	    <div class="asd">
+	        <input id="wrt" type="password" placeholder="Password">
+	        <button onclick="show()" id="btn">
+	        	<img src="view.png">
+	        </button>
+	    </div>
+	    <p id="txt">Capslock On</p>
+	</div>
+<script type="text/javascript">
+	let input = document.querySelector('#wrt');
+	let test = document.querySelector('#txt');
+	input.addEventListener("keyup", function(event){
+		if (event.getModifierState("CapsLock")) 
+		{
+            test.style.display = "block";
+        } 
+        else 
+        {
+            test.style.display = "none"
+        }
+	});
+    let count = false;
+	function show(){
+		if (count) {
+			document.querySelector('#wrt').setAttribute("type","password");
+			count = false;
+		}else{
+			document.querySelector('#wrt').setAttribute("type","text");
+			count = true;
+		}
+	};
+</script>
+</body>
+</html>

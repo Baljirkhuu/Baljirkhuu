@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math game for kids</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: skyblue;
+	}
+	#container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+		padding-top: 50px;
+	}
+	#num1{
+		border: 5px solid red;
+		width: 90px;
+		height: 90px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: purple;
+		font-weight: 700;
+		font-size: 30px;
+	}
+	#num2{
+	    border: 5px solid blue;
+		width: 90px;
+		height: 90px;	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: brown;
+		font-weight: 700;
+		font-size: 30px;
+	}
+	input{
+		border: 5px solid #000;
+		width: 90px;
+		height: 89px;
+		color: #000;
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+	}
+	p{
+		margin: 0 10px;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	button{
+		width: 90px;
+		height: 30px;
+		font-size: 18px;
+		text-transform: uppercase;
+		border: 1px solid red;
+		background: #fc1c1c;
+		font-weight: 700;
+		transition: .5s;
+		border-radius: 2px;
+		outline: none;
+		margin-left: 46.9%;
+		margin-top: 2%;
+	}
+	button:hover{
+		transform: scale(1.1);
+		transition: .5s;
+		cursor: pointer;
+	}
+	#outbackground{
+		background: #b0aeae;
+		height: 300px;
+	}
+</style>
+<body>
+	<div id="outbackground">
+	    <div id="container">
+	    	<div id="num1">0</div>
+	    	<p>+</p>
+	    	<div id="num2">0</div>
+	    	<p>=</p>
+	    	<input id="input" type="text" name="">
+	    </div>
+	    <button id="btn">Check</button>
+	</div>
+<script type="text/javascript">
+	let number1 = document.querySelector('#num1').textContent = Math.floor(Math.random()*11);
+	let number2 = document.querySelector('#num2').textContent = Math.floor(Math.random()*11);
+	sum = number1 + number2;
+	let btn = document.querySelector("#btn");
+	btn.addEventListener("click", function(event){
+	    let numvalue = document.querySelector('#input').value;
+	    let number1 = document.querySelector('#num1').textContent = Math.floor(Math.random()*11);
+	    let number2 = document.querySelector('#num2').textContent = Math.floor(Math.random()*11);
+		if (sum == numvalue) {
+			alert("Хариулт зөв байна");
+		} else{
+			alert("Хариулт буруу байна");
+		}
+		location.reload();
+	});
+</script>
+</body>
+</html>
